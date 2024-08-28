@@ -1,0 +1,407 @@
+.services_320{
+  /* width: 100%; */
+  background-color: #F8F8F8;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  /* margin: 0 auto; */
+}
+.header{
+  /* width: 100%; */
+  min-height: 88px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+.ic_search_btn{
+  background-image: url("https://kukufc1.github.io/KaTa//src/img/search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+}
+.ic_search_btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #FF3E79;
+  border-radius: 50%;
+  /* margin: 0 0.5em 0 1em; */
+}
+
+label > div{
+  transform: translate(-300%,-0%);
+  transition: .5s;
+  background: transparent;
+  /* pointer-events: none; */
+  /* background-color: purple;/ */
+}
+
+.burger-checkbox:checked + label > div{
+  transform: translate(0% , -10%);
+}
+.burger-checkbox:checked + label > div:first-child{
+  transform: translate(150% , -10%);
+}
+.burger-checkbox:checked + label > div:last-child{
+  transform: translate(600% , -150%);
+}
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  margin:  0 0 0 10px;
+  width: 40px;
+  height: 40px;
+  background: url('https://kukufc1.github.io/KaTa//src/img/burger.png');
+  /* background-color: orange; */
+  transform: translateX(0%);
+}
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  top: 5px;
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url('https://kukufc1.github.io/KaTa//src/img/burgerX.png');
+  transform: translateX(-130%);
+}
+
+.burger-checkbox:checked + .burger::before {
+  background: url('https://kukufc1.github.io/KaTa//src/img/burgerX.png');
+  transform: translate(0%,-12%);
+}
+/* .burger-checkbox:checked + .burger::after {
+
+} */
+.menu-list {
+  width: 320px;
+  height: 1024px;
+  top: 0px;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 150px 0 0 0;
+  background: #FFFFFF;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: .5s;
+  box-shadow: -2px 0px 4px 0px #454F7E05;
+
+}
+.menu-item {
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  display: block;
+  padding: 7px 0px 7px 25px;
+  margin: 0px 0 30px 0;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  background-color: violet;
+}
+.menu-item:hover {
+  border-left: solid 4px #41F6D7;
+  color:  #7E7E82;
+  transition: .2s;
+}
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+  box-shadow: 16px 0px 52px 0px #0E185033;
+}
+.mobile_menu_group_contact{
+  position: absolute;
+  margin:  55em 0 0em 0;
+  /* top: 45vw; */
+  background-color: violet;
+  transform: translateX(-250px);
+}
+.burger-checkbox:checked ~ .mobile_menu_group_contact{
+  transform: translateX(0px);
+}
+.menu_group_contact{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0.5em;
+}
+.mail_and_numder{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mail_and_numder a:first-child{
+  text-decoration: none;
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  font-weight: 500;
+  color: black;
+  margin: 10px 0 10px 20px;
+}
+.mail_and_numder a:last-child{
+  text-decoration: none;
+  font-family: TT Lakes;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6000000238418579px;
+  text-align: left;
+  font-weight: 700;
+  color: black;
+  margin: 0 0 0 20px;
+}
+.language{
+  margin: 30px 0px 0px 20px;
+}
+.language a{
+  text-decoration: none;
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  font-weight: 400;
+  color: black;
+}
+.language a:hover{
+  color: #7E7E82;
+}
+/* .language a:active{
+  color: #7E7E82;
+} */
+
+/* .ic_burger{
+  margin: 0 10px 0 10px;
+} */
+
+
+
+
+.group{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: skyblue; */
+}
+.img_group{
+  margin: 0  0 0 1em;
+}
+.group_contact{
+  display: none;
+}
+.divider_left{
+  display: none;
+  /* margin: 0 10px 0 0px; */
+}
+
+.divider_right{
+  /* display: none; */
+  margin: 0 1em 0 2em;
+}
+
+
+
+
+.ic_call_btn{
+  background-image: url('https://kukufc1.github.io/KaTa//src/img/call_ic.png');
+  width: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ic_chat_btn{
+  background-image: url('https://kukufc1.github.io/KaTa//src/img/chat_ic.png');
+  width: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ic_profile_btn{
+  background-image:url('https://kukufc1.github.io/KaTa//src/img/profile_ic.png');
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.call > button
+,.chat > button
+,.profile > button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #FF3E79;
+  border-radius: 50%;
+  margin: 0 0.5em 0 1em;
+}
+.upperMenu_mob__seting{
+  /* width: 40%; */
+  display: flex;
+  align-items: center;
+  justify-content:  space-space-between;
+  /* padding:0 1em 0 1em; */
+  /* background: blue; */
+}
+.ic_repair > button ,.ic_checkstatus > button{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #FF3E79;
+  border-radius: 50%;
+  margin: 0 0.5em 0 1em;
+}
+.ic_repair_btn{
+  background-image: url('https://kukufc1.github.io/KaTa//src/img/repair_ic.png');
+  width: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ic_checkstatus_btn{
+  background-image: url('https://kukufc1.github.io/KaTa//src/img/checkstatus.png');
+  width: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.Title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: solid 4px #41F6D7;
+  margin: 0 2em 0 0em;
+}
+.Title h1{
+  font-size: 28px;
+  font-family: TT Lakes;
+  /* text-align: left; */
+  padding: 0.5em;
+  white-space:nowrap;
+}
+
+
+.title_ic_repair{
+  opacity: 0;
+  width: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: violet; */
+  /* background-color: gold; */
+  /* background-color: silver; */
+  /* background-color: plum; */
+}
+.title_ic_repair > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    /* background-color: plum; */
+}
+.title_ic_repair > div:first-child{
+  margin-right: 3em;
+}
+.title_ic_repair > div > button > h3{
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  font-weight: 525;
+  white-space: nowrap;
+  display: block;
+  width: 150px;
+  height: auto;
+  transform: translate(-75%,0%);
+}
+
+
+
+.slideMenu {
+  display: flex;
+  overflow-x: scroll;
+  margin: 0 0em 0 1em;
+}
+.slideMenu::-webkit-scrollbar{
+  width: 0px;
+  height: 0;
+}
+.slideMenu button:hover{
+  border: solid 2px #B8FFEC;
+}
+.slideMenu button{
+  max-width: 246px;
+  height: 40px;
+  font-family: TT Lakes;
+  font-size: 16px;
+  white-space: nowrap;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  padding: 0 20px 0 20px;
+  color:  #7E7E82;
+  /* margin: 0 0px 0 10px; */
+}
+
+
+.first_block__content{
+  margin: 0 0 20px 0px;
+}
+.first_block h4{
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  margin: 0 0 20px 10px;
+}
+.first_block h4 span{
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  display: none;
+}
+.next_read_btn{
+    white-space: nowrap;
+    background-image: url('https://kukufc1.github.io/KaTa//src/img/icon.png');
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    margin-left: 0.3em;
+}
+.next_read_btn h3{
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  font-weight: 550;
+  margin-left: 1.3em;
+}
